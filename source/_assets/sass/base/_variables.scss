@@ -1,0 +1,127 @@
+@import url("https://use.typekit.net/wrf8pri.css");
+
+$x-small: 468px;
+$small: 768px;
+$medium: 970px;
+$large: 1200px;
+
+/* Breakpoints */
+
+$mobile: $x-small;
+$tablet: $small;
+$desktop: $medium;
+
+/* Colors */
+
+$background: rgb(255, 255, 255);
+$primary-color: #232323;
+$secondary-color: #3a3a3a;
+$accent-color: #ffffff;
+$alternate-background: #fafafa;
+$alternate-color: #404040;
+$link-color: $primary-color;
+$link-hover-color: lighten($link-color, 15%);
+$highlight: #ffeea8;
+$selection: lighten($primary-color, 20%);
+$error: #D33C40;
+$bq-border: 16px solid #f0f0f0;
+
+/* Typography */
+
+// Body font
+$font-size: 16px;
+$body-font-size: 1.125rem;
+$font-style: normal;
+$font-variant: normal;
+$font-weight: normal;
+$font-color: #3e3e3e;
+$font-family: neue-haas-grotesk-text ,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$line-height: 1.5;
+
+// Headings
+$heading-font-color: #212121;
+$heading-font-weight: 600;
+$heading-font-family: neue-haas-grotesk-text, serif;
+$heading-line-height: 1.2;
+
+// Mobile heading font size
+$h1-mobile: 1.75rem;
+$h2-mobile: 1.5rem;
+$h3-mobile: 1.25rem;
+$h4-mobile: 1.1rem;
+$h5-mobile: 1rem;
+
+// Heading font size
+$h1: 2.25rem;
+$h2: 2rem;
+$h3: 1.75rem;
+$h4: 1.5rem;
+$h5: 1.25rem;
+
+/* Padding */
+
+$padding: 2rem;
+$margins: 1.5rem;
+$content-padding: 60px 0;
+$content-padding-mobile: 30px 0;
+
+/* Borders */
+
+$border-width: 2px;
+$border-style: solid;
+$border-color: #424242;
+$border-radius: 0px;
+$borders: $border-width $border-style $border-color;
+
+/* Buttons */
+
+$button-background: transparent;
+$button-background-hover: darken($button-background, 10%);
+$button-color: $primary-color;
+$button-font-weight: 700;
+$button-font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-font-size: 1rem;
+$button-border-width: 2px;
+$button-border-style: solid;
+$button-border-color: $primary-color;
+$button-border-radius: $border-radius;
+$button-text-transform: uppercase;
+
+// Accent buttons
+$accent-button-background: $secondary-color;
+$accent-button-color: #ffffff;
+$accent-button-color-hover: #ffffff;
+
+// Muted Buttons
+$muted-border: 1px solid $accent-color;
+$muted-border-hover: 1px solid darken($accent-color, 30%);
+$muted-background: transparent;
+$muted-background-hover: transparent;
+$muted-color: darken($accent-color, 50%);
+$muted-color-hover: darken($accent-color, 50%);
+
+// Round Buttons
+$round-buttons: 40px;
+
+/* Forms */
+
+$forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+$input-background: transparent;
+$placeholder: darken($accent-color, 20%);
+$form-border: 1px solid $border-color;
+$form-border-hover: 1px solid darken($border-color, 10%);
+$form-border-focus: 1px solid $link-color;
+
+/* Tables */
+
+$stripes: #f8f8f8;
+$caption: #ababab;
+
+/* Code */
+
+$code-color: $font-color;
+$code-size: 14px;
+$code-family: Menlo, monospace;
+$code-background: transparent;
+$code-borders: $borders;

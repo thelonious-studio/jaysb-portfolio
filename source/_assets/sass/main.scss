@@ -1,13 +1,280 @@
+// Configuration
+@import "base/variables";
+@import "base/mixins";
+@import "base/flex";
+@import "base/flexboxgrid";
+
+// Reset
+@import "base/normalize";
+@import "base/reset";
+
+// Components
+@import "components/typography";
+@import "components/containers";
+@import "components/helpers";
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/navigation";
+
 // Tacit - CSS Framework for Dummies, Without Classes
 @import url('https://unpkg.com/tacit-css@1.3.6/dist/tacit-css-1.3.6.min.css');
 
 @import "~highlight.js/styles/atom-one-dark";
 
 button[data-sharer] {
-    color: #fff;
+  color: #fff;
 }
 
 .test-css {
-    padding: 5px;
-    border: 2px solid blue;
+  padding: 5px;
+  border: 2px solid blue;
+}
+
+body {
+  margin: 0;
+  padding: 6rem 0 0 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+// -- Header
+
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: transform 300ms;
+  background-color: rgba(255, 255, 255, .95);
+
+  &.is-hidden {
+    transform: translateY(-100%);
+  }
+
+  &.is-visible {
+    transform: translateY(0);
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    // background: #222;
+  }
+
+  ul>li>a {
+    display: block;
+    padding: 1.1rem 2rem;
+    color: #333;
+    text-decoration: none;
+    transition: all ease-in-out 150ms;
+  }
+
+  ul>li>a:hover,
+  ul>li>a:focus {
+    color: #fff;
+    background: rgb(28, 28, 28);
+  }
+
+  &__brand {
+    width: 40%;
+    margin-right: auto;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    h1 {
+      margin: .5rem 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    // max-width: $large;
+    padding: 0 $padding;
+    margin: 0 auto;
+  }
+}
+
+nav {}
+
+section {
+  padding: $padding 0;
+}
+
+.footer {
+  padding: 2.5rem 0;
+  background-color: $primary-color;
+  color: #f3f3f3;
+
+  &__address {
+    margin-bottom: .5rem;
+  }
+
+  &__colophon {
+    margin-bottom: .5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link {}
+
+  a {
+    color: #f3f3f3;
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  h3 {
+    color: #f3f3f3;
+    margin: 0;
+  }
+}
+
+.alt_bg {
+  color: rgb(225, 225, 225);
+  background: rgb(28, 28, 28);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #ffffff;
+  }
+}
+
+.home {
+  &__landing {
+    position: relative;
+    height: 90vh;
+  }
+
+  &__landinglogo {
+    fill: black !important;
+    opacity: 1;
+    width: 75%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  &__introduction {
+    min-height: 100vh;
+  }
+
+  &__introimg {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: $padding;
+  }
+
+  &__aboutcontent {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__work {
+
+  }
+
+  &__mailinglist {
+    color: rgb(225, 225, 225);
+    background: rgb(28, 28, 28);
+    height: 1%;
+
+  }
+}
+
+.about {}
+
+.work {}
+
+.contact {}
+
+
+.box-1 {
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+
+  img, .bg {
+
+
+  }
+
+  .row {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/167792/mountains_copy.jpg') no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+  }
+}
+
+.card-container {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.info-card {
+  width: 100%;
+  height: 100%;
+  // background: url('/assets/build/img/th_place.jpg');
+}
+
+
+.card {
+  &__container {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+      transform: translate(-4px, -4px);
+  }
+  &__work {
+
+  }
+
+
 }

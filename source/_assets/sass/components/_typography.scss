@@ -1,0 +1,330 @@
+/* Typography
+  =============== */
+
+// HTML base
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+  font-size: $font-size;
+}
+
+// Body base
+body {
+  color: $font-color;
+  background: $background;
+  font-size: $body-font-size;
+}
+
+p,
+ol,
+ul,
+dl,
+table {
+  margin: 0 0 $margins 0;
+}
+
+::selection {
+  color: $background;
+  background: $selection;
+}
+
+// Remove extra margin for nested lists
+ul li ul {
+  margin-bottom: 0;
+}
+
+ol li ol {
+  margin-bottom: 0;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: $margins 0;
+  font-weight: $heading-font-weight;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color: $heading-font-color;
+
+  &:not(:first-child) {
+    margin: 1.5rem 0;
+  }
+}
+
+// Increased margin on additional headings
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
+// Heading individual styles
+h1 {
+  font-size: $h1-mobile;
+}
+
+h2 {
+  font-size: $h2-mobile;
+}
+
+h3 {
+  font-size: $h3-mobile;
+}
+
+h4 {
+  font-size: $h4-mobile;
+}
+
+h5 {
+  font-size: $h5-mobile;
+}
+
+@include small-breakpoint {
+
+  // Increased margin on additional headings
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
+  // Heading desktop individual styles
+  h1 {
+    font-size: $h1;
+  }
+
+  h2 {
+    font-size: $h2;
+  }
+
+  h3 {
+    font-size: $h3;
+  }
+
+  h4 {
+    font-size: $h4;
+  }
+
+  h5 {
+    font-size: $h5;
+  }
+}
+
+// Link styling
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: underline;
+    }
+}
+
+// Link Style - Block Background
+
+// a {
+//     color: inherit;
+//     text-decoration: none;
+//     display: inline-block;
+//     position: relative;
+//     &::after {
+//       content: "";
+//       display: block;
+//       position: absolute;
+//       padding: 0 2px;
+//       width: 100%;
+//       z-index: -1;
+//       -webkit-transition: height 200ms;
+//       transition: height 200ms;
+//       background-color: $primary-color;
+//       height: 0.65rem;
+//       bottom: 2px;
+//     }
+//     &:hover::after {
+//       height: 1.25em;
+//     }
+// }
+
+// Link Style - 2 Points Meet
+
+// a {
+//   color: $secondary-color;
+//   position: relative;
+//   /* 1 */
+//   text-decoration: none;
+//   /* 2 */
+//   display: inline-block;
+//   /* 3 */
+// }
+
+// /**
+//    * 1. Put pseudo-elements at the bottom of link box.
+//    * 2. Ultimately they are each a box of 50% per 1px.
+//    * 3. Hide them through an horizontal scale of 0.
+//    * 4. Apply a transition to see them growing on active.
+//    * 5. Make them inherit the color from the link.
+//    */
+// a::before,
+// a::after {
+//   content: '';
+//   position: absolute;
+//   /* 1 */
+//   top: 90%;
+//   /* 1 */
+//   height: 4px;
+//   /* 2 */
+//   width: 50%;
+//   /* 2 */
+//   transform: scaleX(0);
+//   /* 3 */
+//   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+//   /* 4 */
+//   background-color: $primary-color;
+//   /* 5 */
+// }
+
+// /**
+//    * Position first pseudo-element on the left.
+//    */
+// a::before {
+//   left: 0;
+//   transform-origin: left;
+// }
+
+// /**
+//    * Position second pseudo-element on the right.
+//    */
+// a::after {
+//   right: 0;
+//   transform-origin: right;
+// }
+
+// /**
+//    * 1. Scaling up pseudo-elements on hover/active state.
+//    */
+// a:active::before,
+// a:hover::before,
+// a:active::after,
+// a:hover::after {
+//   transform: scaleX(1);
+//   /* 1 */
+// }
+
+// Link - Left to Right
+
+// a {
+//   color: $primary-color;
+//   position: relative;
+//   text-decoration: none;
+
+//   &:hover {
+//     color: $primary-color;
+//   }
+
+//   &:after {
+//     background-color: $secondary-color;
+//     content: "";
+//     height: 8px;
+//     left: 0px;
+//     position: absolute;
+//     top: 25px;
+//     width: 0;
+//     -webkit-transition: all 0.2s ease-in-out;
+//     -moz-transition: all 0.2s ease-in-out;
+//     -o-transition: all 0.2s ease-in-out;
+//     -ms-transition: all 0.2s ease-in-out;
+//     transition: all 0.25s ease-in-out;
+//   }
+
+//   &:hover:after {
+//     width: 99%;
+//   }
+// }
+
+// Highlight
+mark {
+  background: $highlight;
+  padding: 0 0.2rem;
+}
+
+// Blockquote
+blockquote {
+  margin: 0 0 $margins 0;
+  border-left: $bq-border;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+
+  cite {
+    display: block;
+    margin-top: $margins;
+    font-size: 1rem;
+    text-align: right;
+  }
+}
+
+// Code block styling
+pre {
+  border: 0;
+  border-radius: $border-radius;
+  background: $code-background;
+  padding: 1rem;
+  tab-size: 2;
+  color: $code-color;
+  font-family: $code-family;
+  font-size: $code-size;
+  margin: 0 0 $margins 0;
+
+  code {
+    font-family: $code-family;
+    line-height: 1.2;
+  }
+}
+
+// Keyboard input
+kbd {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color: #333;
+  display: inline-block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 .1em;
+  padding: .1em .6em;
+  text-shadow: 0 1px 0 #fff;
+}
+
+// Inline code styling
+:not(pre)>code {
+  color: $code-color;
+  background: $code-background;
+  font-family: $code-family;
+  font-size: $code-size;
+  padding: 0 0.2rem;
+  border: $borders;
+  border-radius: $border-radius;
+}
+
+// Line break
+hr {
+  height: 0;
+  border: 0;
+  border-top: $borders;
+}
+
+// Definition list
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin-bottom: .5rem;
+}

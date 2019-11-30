@@ -4,20 +4,20 @@ return [
     'production' => false,
     'baseUrl' => 'https://artisan-static-demo.netlify.com',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
+        'title' => 'Jayson Browne',
+        'description' => 'Portfolio',
         'image' => 'default-share.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
-        'twitter' => 'johndoe',
-        'github' => 'johndoe',
+        'name' => 'Jayson Browne',
+        'twitter' => 'jaysbrowne',
+        'github' => 'jaysbrowne',
     ],
     'services' => [
         'analytics' => 'UA-XXXXX-Y',
-        'disqus' => 'artisanstatic',
-        'cloudinary' => 'artisanstatic',
-        'jumprock' => 'artisanstatic',
+        'disqus' => '',
+        'cloudinary' => 'jaysbrowne',
+        'jumprock' => '',
     ],
     'collections' => [
         'posts' => [
@@ -26,7 +26,7 @@ return [
             'extends' => '_layouts.post',
             'section' => 'postContent',
             'isPost' => true,
-            'comments' => true,
+            'comments' => false,
             'tags' => [],
         ],
         'tags' => [

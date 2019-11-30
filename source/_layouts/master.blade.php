@@ -14,20 +14,11 @@
     @include('_partials.head.meta')
     @include('_partials.cms.identity_widget')
 
+    <link rel="stylesheet" href="https://use.typekit.net/kwo6ewx.css">
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 <body>
-    <header>
-        <nav>
-            <strong>{{ $page->site->title }}</strong><br>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/posts">Posts</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    @include('_partials.header')
 
     <article>
         <section>
@@ -35,12 +26,7 @@
         </section>
     </article>
 
-    <footer>
-        <small>
-            This project is maintained by <a href="https://raniesantos.netlify.com">Ranie Santos</a>.
-            View the <a href="https://github.com/raniesantos/artisan-static">GitHub repo</a>.
-        </small>
-    </footer>
+    @include('_partials.footer')
 
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     @includeWhen($page->production, '_partials.analytics')

@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/wrf8pri.css");
+@import url("https://use.typekit.net/kwo6ewx.css");
 
 $x-small: 468px;
 $small: 768px;
@@ -13,8 +13,8 @@ $desktop: $medium;
 
 /* Colors */
 
-$background: rgb(255, 255, 255);
-$primary-color: #232323;
+$background: #F7FAF7;
+$primary-color: #ff6060;
 $secondary-color: #3a3a3a;
 $accent-color: #ffffff;
 $alternate-background: #fafafa;
@@ -26,8 +26,6 @@ $selection: lighten($primary-color, 20%);
 $error: #D33C40;
 $bq-border: 16px solid #f0f0f0;
 
-/* Typography */
-
 // Body font
 $font-size: 16px;
 $body-font-size: 1.125rem;
@@ -35,13 +33,13 @@ $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
 $font-color: #3e3e3e;
-$font-family: neue-haas-grotesk-text ,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-family: 'europa, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
 $line-height: 1.5;
 
 // Headings
 $heading-font-color: #212121;
 $heading-font-weight: 600;
-$heading-font-family: neue-haas-grotesk-text, serif;
+$heading-font-family: 'europa,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
 $heading-line-height: 1.2;
 
 // Mobile heading font size
@@ -79,7 +77,7 @@ $button-background: transparent;
 $button-background-hover: darken($button-background, 10%);
 $button-color: $primary-color;
 $button-font-weight: 700;
-$button-font-family: neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$button-font-family: 'europa,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
 $button-font-size: 1rem;
 $button-border-width: 2px;
 $button-border-style: solid;

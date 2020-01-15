@@ -2,13 +2,13 @@
 
 @section('content')
 <h1>Home</h1>
-		<div class="row">
-			@forelse ($casestudies->sortBy('title') as $casestudy)
+		<div class="row around-xs">
+			@forelse ($casestudies->sortByDesc('date') as $casestudy)
 				<div class="col-xs-10 col-sm-6">
 					<a href="{{ $casestudy->getPath() }}">
-					<div class="home__casestudy home__casestudy-{{ $casestudy->title }}">
+					<div class="home__casestudy home__casestudy-{{ str_slug($casestudy->title, '-') }}">
 					<small>{{ date('M j, Y', $casestudy->date) }}</small><br>
-					{{ $casestudy->title }}
+					<strong>{{ $casestudy->title }}</strong>
 					</div>
 					</a>
 				</div>

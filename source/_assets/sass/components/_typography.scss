@@ -218,35 +218,35 @@ a {
 
 // Link - Left to Right
 
-a {
-  color: $primary-color;
-  position: relative;
-  text-decoration: none;
+// a {
+//   color: $primary-color;
+//   position: relative;
+//   text-decoration: none;
 
-  &:hover {
-	color: $primary-color;
-	text-decoration: none;
-  }
+//   &:hover {
+// 	color: $primary-color;
+// 	text-decoration: none;
+//   }
 
-  &:after {
-    background-color: $secondary-color;
-    content: "";
-    height: 1px;
-    left: 0px;
-    position: absolute;
-    top: 25px;
-    width: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.25s ease-in-out;
-  }
+//   &:after {
+//     background-color: $secondary-color;
+//     content: "";
+//     height: 1px;
+//     left: 0px;
+//     position: absolute;
+//     top: 25px;
+//     width: 0;
+//     -webkit-transition: all 0.2s ease-in-out;
+//     -moz-transition: all 0.2s ease-in-out;
+//     -o-transition: all 0.2s ease-in-out;
+//     -ms-transition: all 0.2s ease-in-out;
+//     transition: all 0.25s ease-in-out;
+//   }
 
-  &:hover:after {
-    width: 99%;
-  }
-}
+//   &:hover:after {
+//     width: 99%;
+//   }
+// }
 
 // Highlight
 mark {

@@ -15,14 +15,12 @@ return [
     ],
     'services' => [
         'analytics' => 'UA-XXXXX-Y',
-        'disqus' => '',
         'cloudinary' => 'jaysbrowne',
-        'jumprock' => '',
     ],
     'collections' => [
         'casestudies' => [
             'path' => '/{filename}',
-            'sort' => '-date',
+            'sort' => 'date',
             'extends' => '_layouts.casestudy',
             'section' => 'csContent',
             'isCaseStudy' => true,

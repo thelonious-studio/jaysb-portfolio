@@ -1,6 +1,6 @@
 ---
-title: '05 - Cloudinary Image Hosting'
-date: 2018-08-31
+title: 'Cloudinary Image Hosting'
+date: 2020-01-13
 image: photos.jpg
 comments: false
 ---

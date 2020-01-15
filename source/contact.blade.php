@@ -5,7 +5,7 @@
 @section('content')
     <h1>Contact</h1>
 
-    <form action="https://jumprock.co/mail/{{ $page->services->jumprock }}" method="post">
+    <form action="" method="post">
         <div>
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name" required>

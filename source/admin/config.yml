@@ -5,10 +5,10 @@ backend:
 publish_mode: editorial_workflow
 media_folder: images # required but unused, host images externally
 collections:
-  - name: "posts"
-    label: "Posts"
-    label_singular: "Post"
-    folder: "source/_posts"
+  - name: "case_studies"
+    label: "Case Studies"
+    label_singular: "Case Study"
+    folder: "source/_case_study"
     create: true
     slug: "{{slug}}"
     fields:

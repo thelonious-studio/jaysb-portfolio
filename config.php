@@ -20,12 +20,12 @@ return [
         'jumprock' => '',
     ],
     'collections' => [
-        'posts' => [
-            'path' => 'posts/{filename}',
+        'casestudies' => [
+            'path' => 'casestudies/{filename}',
             'sort' => '-date',
-            'extends' => '_layouts.post',
-            'section' => 'postContent',
-            'isPost' => true,
+            'extends' => '_layouts.casestudy',
+            'section' => 'csContent',
+            'isCaseStudy' => true,
             'comments' => false,
             'tags' => [],
         ],
@@ -39,7 +39,7 @@ return [
         ],
     ],
     'excerpt' => function ($page, $limit = 250, $end = '...') {
-        return $page->isPost
+        return $page->isCaseStudy
             ? str_limit_soft(content_sanitize($page->getContent()), $limit, $end)
             : null;
     },

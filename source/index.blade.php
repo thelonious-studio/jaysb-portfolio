@@ -1,11 +1,14 @@
 @extends('_layouts.master')
 
 @section('content')
-    <h1></h1>
-
-    <h2></h2>
-
-    <p>CSS test: <span class="test-css">text with border and padding</span></p>
-
-    <p>JavaScript test: <a href="#" class="test-js">click me</a></p>
+    <ul>
+        @forelse ($casestudies->sortBy('title') as $casestudy)
+            <li>
+                <a href="{{ $casestudy->getPath() }}">{{ $casestudy->title }}</a>
+                <small>{{ date('M j, Y', $casestudy->date) }}</small>
+            </li>
+        @empty
+            <p>No case studies to show.</p>
+        @endforelse
+    </ul>
 @endsection

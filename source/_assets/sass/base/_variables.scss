@@ -14,7 +14,7 @@ $desktop: $medium;
 /* Colors */
 
 $background: #F7FAF7;
-$primary-color: #6776e8;
+$primary-color: #323232;
 $secondary-color: #3a3a3a;
 $accent-color: #ffffff;
 $alternate-background: #fafafa;
@@ -28,18 +28,18 @@ $bq-border: 16px solid #f0f0f0;
 
 // Body font
 $font-size: 16px;
-$body-font-size: 1.125rem;
+$body-font-size: 21px;
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
 $font-color: #3e3e3e;
-$font-family: 'europa, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
+$font-family: 'neue-haas-grotesk-text, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
 $line-height: 1.5;
 
 // Headings
 $heading-font-color: #212121;
-$heading-font-weight: 600;
-$heading-font-family: 'europa,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
+$heading-font-weight: 700;
+$heading-font-family: 'neue-haas-grotesk-display,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
 $heading-line-height: 1.2;
 
 // Mobile heading font size
@@ -77,7 +77,7 @@ $button-background: transparent;
 $button-background-hover: darken($button-background, 10%);
 $button-color: $primary-color;
 $button-font-weight: 700;
-$button-font-family: 'europa,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
+$button-font-family: 'neue-haas-grotesk-display,-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif';
 $button-font-size: 1rem;
 $button-border-width: 2px;
 $button-border-style: solid;

@@ -21,7 +21,7 @@ return [
     ],
     'collections' => [
         'casestudies' => [
-            'path' => 'casestudies/{filename}',
+            'path' => '/{filename}',
             'sort' => '-date',
             'extends' => '_layouts.casestudy',
             'section' => 'csContent',

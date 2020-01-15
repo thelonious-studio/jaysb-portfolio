@@ -14,18 +14,16 @@
 		@include('_partials.head.meta')
 		@include('_partials.cms.identity_widget')
 
-		<link rel="stylesheet" href="https://use.typekit.net/kwo6ewx.css">
+		<link rel="stylesheet" href="https://use.typekit.net/oyp8cdc.css">
 		<link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 <body>
 	<div class="container">
 		@include('_partials.header')
 
-		<article>
-				<section>
-						@yield('content')
-				</section>
-		</article>
+		<section>
+				@yield('content')
+		</section>
 
 		@include('_partials.footer')
 	</div>

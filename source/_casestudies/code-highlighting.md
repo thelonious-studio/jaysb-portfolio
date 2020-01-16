@@ -2,6 +2,11 @@
 title: '07 - Code Highlighting'
 date: 2018-08-31
 image: code.jpg
+tags:
+  - css
+  - javascript
+  - php
+  - laravel
 comments: false
 ---
 Below are some examples of code blocks with syntax highlighting.

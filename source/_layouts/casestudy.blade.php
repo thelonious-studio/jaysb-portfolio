@@ -19,8 +19,6 @@
 
     @yield('csContent')
 
-    <hr>
-
     @include('_partials.share')
 
 @endsection

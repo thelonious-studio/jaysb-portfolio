@@ -1,14 +1,6 @@
 import 'sharer.js'
 import './highlight'
 
-const clickMe = document.querySelector('.test-js')
-
-if (clickMe) {
-  clickMe.addEventListener('click', () => {
-    clickMe.textContent = `it works ${String(Date.now()).slice(-6)}`
-  })
-}
-
 const outdated = document.querySelector('[data-phpdate]')
 
 if (outdated) {
@@ -17,3 +9,4 @@ if (outdated) {
     outdated.style.display = 'none'
   }
 }
+

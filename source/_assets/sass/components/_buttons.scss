@@ -1,5 +1,6 @@
-/* Buttons
-  =============== */
+/**
+ * Buttons
+ */
 
 // Main button styling
 %buttons {
@@ -13,8 +14,8 @@
     font-family: $button-font-family;
     font-size: $button-font-size;
     text-transform: $button-text-transform;
-    padding: .75rem 1.25rem;
-    margin: 0 0 .5rem 0;
+    padding: 0.75rem 1.25rem;
+    margin: 0 0 0.5rem 0;
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
@@ -36,19 +37,21 @@
     background: darken($button-background, 10%);
     color: $button-color;
     text-decoration: none;
-    outline: none;
 }
 
 // Apply styles to .button class, button element, and button-based inputs
 #{$buttons} {
     @extend %buttons;
+
     &::-moz-focus-inner {
         border: 0;
         padding: 0;
     }
+
     &:hover {
         @extend %buttons-hover;
     }
+
     &:focus,
     &:active {
         @extend %buttons-focus;
@@ -61,6 +64,7 @@ a.accent-button {
     color: $accent-button-color;
     border: 1px solid $accent-button-background;
     background: $accent-button-background;
+
     &:hover,
     &:focus,
     &:active {
@@ -70,12 +74,30 @@ a.accent-button {
     }
 }
 
+// Outline button color
+.accent-button,
+a.accent-button {
+    color: $accent-button-color;
+    border: 1px solid lighten($primary-color, 30%);
+    background: transparent;
+    transition: 150ms all ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: white;
+        border: 1px solid darken($accent-button-background, 5%);
+        background: darken($accent-button-background, 5%);
+    }
+}
+
 // Muted buttons
 .muted-button,
 a.muted-button {
     background: $muted-background;
     border: $muted-border;
     color: $muted-color;
+
     &:hover,
     &:focus,
     &:active {
@@ -102,28 +124,4 @@ a.square-button {
 a.full-button {
     display: block;
     width: 100%;
-}
-
-.button-main {
-  letter-spacing: .09px;;
-  display: block;
-  border: 2px solid #000;
-  margin: 1rem;
-  padding: .75rem 1.5rem;
-  width: fit-content;
-  box-shadow: 0;
-  text-transform: uppercase;
-  transition: all 200ms ease-in-out;
-  text-decoration: none;
-  color: #333;
-  font-weight: 700;
-  &:hover {
-      box-shadow: 4px 4px 0px black;
-  }
-}
-.button-1 {
-
-  &:hover {
-      transform: translate(-4px, -4px);
-  }
 }

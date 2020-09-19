@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
   squash_merges: true
-media_folder: "/build/source/assets/images/"
+media_folder: "/source/assets/images/"
 public_folder: "/assets/build/images/"
 # logo_url: https://thelonious.com.au/images/logo.svg
 collections:

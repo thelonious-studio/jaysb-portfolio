@@ -4,7 +4,7 @@ return [
     'production' => false,
     'baseUrl' => 'https://jaysonbrowne.com',
     'site' => [
-        'title' => 'Jayson Browne - Front-end designer & developer',
+        'title' => 'Jayson Browne',
         'description' => 'Portfolio',
 		'image' => 'jayson_browne_front_end_developer_portfolio.jpg',
 		'role' => 'Front-end designer & developer'

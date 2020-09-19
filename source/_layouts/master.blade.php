@@ -7,7 +7,7 @@
 		<title>
 				@yield('title')
 				{{ !empty($__env->yieldContent('title')) ? ' | ' : '' }}
-				{{ $page->site->title }}
+				{{ $page->site->title }} - {{ $page->site->role }}
 		</title>
 
 		@include('_partials.head.favicon')

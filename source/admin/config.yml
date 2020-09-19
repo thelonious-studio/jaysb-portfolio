@@ -2,17 +2,17 @@ backend:
   name: git-gateway
   branch: master
   squash_merges: true
-publish_mode: editorial_workflow
-media_folder: images # required but unused, host images externally
+media_folder: images
 collections:
   - name: "case_studies"
     label: "Case Studies"
     label_singular: "Case Study"
-    folder: "source/_case_study"
+    folder: "source/_casestudies"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Type", name: "type", widget: "string", required: true}
+      - {label: "Date", name: "date", widget: "date", required: false}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Write Up", name: "writeup", widget: "markdown", required: false}

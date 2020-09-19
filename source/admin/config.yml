@@ -13,6 +13,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
-			- {label: "Type", name: "type", widget: "string", required: true}
+      - {label: "Type", name: "type", widget: "string", required: true}
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Write Up", name: "writeup", widget: "markdown", required: false}

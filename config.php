@@ -21,7 +21,7 @@ return [
     'collections' => [
         'casestudies' => [
             'path' => '/{filename}',
-			'image' => '/images/{filename}',
+			'image' => '/build/assets/images/{filename}',
             'sort' => 'date',
             'extends' => '_layouts.casestudy',
             'section' => 'csContent',

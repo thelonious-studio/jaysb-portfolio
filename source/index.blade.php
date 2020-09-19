@@ -13,7 +13,7 @@
 					<small>{{ date('M j, Y', $casestudy->date) }}</small><br>
 					<strong>{{ $casestudy->title }}</strong><br>
 					@if ($casestudy->image)
-						<img src="{{ $casestudy->image }}">
+						<img src="/{{ $casestudy->image }}">
 					@endif
 					{{-- @if($casestudy->tags)
 					    @foreach ($casestudy->tags as $tag)

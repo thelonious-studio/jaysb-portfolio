@@ -3,22 +3,32 @@
 @section('title', $page->title)
 
 @section('content')
-    <h1>{{ $page->title }}</h1>
+<div class="casestudy">
 
-    @if ($page->image)
-        <img src="{{ $page->image }}">
-    @endif
+	<div class="casestudy__body">
+		@if ($page->image)
+		<div class="casestudy__img">
+			<img src="{{ $page->image }}">
+		</div>
+		@endif
 
-    <p>
-        <strong>{{ date('F j, Y', $page->date) }}</strong><br>
-        @foreach ($page->tags as $tag)
-            <a href="/tags/{{ $tag }}">{{ $tag }}</a>
-            {{ $loop->last ? '' : '-' }}
-        @endforeach
-    </p>
+		@foreach ($page->tags as $tag)
+			<a href="/tags/{{ $tag }}">{{ $tag }}</a>
+			{{ $loop->last ? '' : '-' }}
+		@endforeach
+		<div class="casestudy__text">
+			<div class="casestudy__header">
+				<h1>{{ $page->title }}</h1>
+				<hr>
+				<h3>{{ $page->type }}</h3>
+			</div>
+			@yield('csContent')
+			{!! $page->writeup !!}
+			<a href="/"><h3>Back</h3></a>
+		</div>
 
-    @yield('csContent')
+	</div>
 
-    @include('_partials.share')
-
+    {{-- @include('_partials.share') --}}
+</div>
 @endsection

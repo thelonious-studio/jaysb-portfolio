@@ -15,6 +15,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Type", name: "type", widget: "string", required: true}
+      - {label: "URL", name: "url", widget: "url", required: true}
       - {label: "Date", name: "date", widget: "date", required: false}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Write Up", name: "writeup", widget: "markdown", required: false}

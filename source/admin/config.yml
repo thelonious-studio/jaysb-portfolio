@@ -4,6 +4,7 @@ backend:
   squash_merges: true
 media_folder: "/source/_assets/images/"
 public_folder: "/assets/images/"
+# logo_url: https://thelonious.com.au/images/logo.svg
 collections:
   - name: "case_studies"
     label: "Case Studies"

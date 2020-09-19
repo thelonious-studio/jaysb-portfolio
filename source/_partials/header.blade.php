@@ -7,13 +7,13 @@
 			<nav>
 				<ul class="header__nav">
 					<li class="header__navitem"><a href="/about">About</a></li>
-					<li class="header__navitem"><a href="/contact">Contact</a></li>
+					<li class="header__navitem"><a href="mailto:hi@jaysbrowne.com">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 		<hr />
 		<div class="header__bottom">
-			<span>Front end developer</span>
+			<span>{{ $page->site->role }}</span>
 		</div>
 	</header>
 

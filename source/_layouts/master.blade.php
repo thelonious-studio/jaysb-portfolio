@@ -21,9 +21,9 @@
 	<div class="container">
 		@include('_partials.header')
 
-		<section>
+		<main>
 				@yield('content')
-		</section>
+		</main>
 
 		@include('_partials.footer')
 	</div>

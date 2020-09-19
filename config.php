@@ -2,11 +2,12 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://artisan-static-demo.netlify.com',
+    'baseUrl' => 'https://jaysonbrowne.com',
     'site' => [
         'title' => 'Jayson Browne',
         'description' => 'Portfolio',
-        'image' => 'default-share.png',
+		'image' => 'jayson_browne_front_end_developer_portfolio.jpg',
+		'role' => 'Front end developer'
     ],
     'owner' => [
         'name' => 'Jayson Browne',

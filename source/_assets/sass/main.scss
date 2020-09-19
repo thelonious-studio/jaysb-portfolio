@@ -94,7 +94,29 @@
 
 .about {
 	padding: 0 1rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 1rem;
+	grid-template-areas:
+		"abouttext aboutimg";
+
+	&__text {
+		grid-area: abouttext;
+	}
+
+	&__header {
+		h1 {
+			margin: .25rem 0;
+		}
+	}
+
+	&__img {
+		grid-area: aboutimg;
+	}
 }
+
 
 // -- Case Study
 

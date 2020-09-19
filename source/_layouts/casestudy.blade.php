@@ -6,7 +6,7 @@
     <h1>{{ $page->title }}</h1>
 
     @if ($page->image)
-        <img src="{{ $page->imageCdn($page->image) }}">
+        <img src="{{ $page->image }}">
     @endif
 
     <p>

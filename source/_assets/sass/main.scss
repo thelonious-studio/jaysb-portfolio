@@ -53,6 +53,39 @@
 
 .home {
 	padding: 0 1rem;
+
+	&__casestudy {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 1rem;
+		grid-template-areas:
+		  "csimg csimg csimg csheader csheader";
+	}
+
+	&__csheader {
+		grid-area: csheader;
+		width: 100%;
+
+		h2 {
+			margin: .25rem 0;
+		}
+
+		h4 {
+			margin: .25rem 0;
+		}
+	}
+
+	&__csimg {
+		grid-area: csimg;
+		height: 18rem;
+		width: 100%;
+		max-width: 28rem;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
 
 
@@ -96,11 +129,28 @@
 // -- Tablet
 
 @include medium-breakpoint {
-
+	.home {
+		&__casestudy {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			gap: 1rem;
+			grid-template-areas:
+			  "csimg csheader";
+		}
+	}
 }
 
 // -- Mobile
 
 @include small-breakpoint {
-
+	.home {
+		&__casestudy {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			gap: 1rem;
+			grid-template-areas:
+			  "csimg"
+			  "csheader";
+		}
+	}
 }

@@ -3,7 +3,7 @@ backend:
   branch: master
   squash_merges: true
 media_folder: "/source/_assets/images/"
-public_folder: "/build_local/assets/images/"
+public_folder: "/assets/images/"
 collections:
   - name: "case_studies"
     label: "Case Studies"

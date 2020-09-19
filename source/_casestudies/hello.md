@@ -2,7 +2,7 @@
 title: Hello
 type: E-commerce Design & Development
 date: 2020-09-19T04:26:35.838Z
-image: /images/1.jpg
+image: /build_local/assets/images/1.jpg
 writeup: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

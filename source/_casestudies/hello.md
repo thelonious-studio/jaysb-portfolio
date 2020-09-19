@@ -2,7 +2,7 @@
 title: Hello
 type: E-commerce Design & Development
 date: 2020-09-19T04:26:35.838Z
-image: /assets/build/images/8-bit-dad-stache-4pack-cans_1080x.jpg
+image: /assets/build/images/uploads/8-bit-dad-stache-4pack-cans_1080x.jpg
 writeup: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

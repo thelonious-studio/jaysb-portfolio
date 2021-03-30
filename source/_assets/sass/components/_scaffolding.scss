@@ -127,11 +127,12 @@ h5 {
 a {
     color: $link-color;
     text-decoration: none;
+	transform: 150ms all ease;
 
     &:hover,
     &:active,
     &:focus {
-        color: $link-hover-color;
+        color: lighten($link-hover-color, 10%);
         text-decoration: none;
     }
 }
@@ -228,7 +229,7 @@ dd {
 // Container
 .container {
 	width: 100%;
-    max-width: $large;
+    max-width: 760px;
     padding: 0 $padding;
     margin-left: auto;
     margin-right: auto;

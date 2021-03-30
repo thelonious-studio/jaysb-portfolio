@@ -3,7 +3,7 @@ title: Test Case Study
 type: E-commerce Design & Development
 date: 2020-09-19T08:24:12.485Z
 image: /assets/build/images/atlas.jpg
-writeup: >-
+writeup:
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Quis commodo odio aenean sed
   adipiscing diam donec. Netus et malesuada fames ac turpis egestas maecenas
@@ -14,9 +14,7 @@ writeup: >-
   Aliquet lectus proin nibh nisl. Vitae et leo duis ut diam quam nulla
   porttitor.
 
-
   Porta nibh venenatis cras sed. Nulla malesuada pellentesque elit eget gravida cum. Eu ultrices vitae auctor eu augue. Egestas quis ipsum suspendisse ultrices gravida dictum. Quis vel eros donec ac. In egestas erat imperdiet sed euismod. Netus et malesuada fames ac turpis egestas sed tempus. Turpis tincidunt id aliquet risus feugiat in. Viverra vitae congue eu consequat ac. Varius morbi enim nunc faucibus a pellentesque sit. Velit scelerisque in dictum non consectetur a erat nam at. Adipiscing tristique risus nec feugiat in fermentum posuere. Faucibus et molestie ac feugiat sed lectus.
-
 
   Orci dapibus ultrices in iaculis nunc sed augue lacus. Quam quisque id diam vel quam elementum pulvinar. Vivamus arcu felis bibendum ut tristique. Netus et malesuada fames ac. Curabitur gravida arcu ac tortor dignissim convallis. Tristique senectus et netus et malesuada fames ac. Enim facilisis gravida neque convallis a cras semper auctor. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Sed tempus urna et pharetra pharetra massa massa ultricies. Id interdum velit laoreet id donec ultrices. Dui nunc mattis enim ut tellus elementum. Posuere morbi leo urna molestie at. Nam aliquam sem et tortor consequat id porta. Aliquam etiam erat velit scelerisque in dictum non. Bibendum at varius vel pharetra. Semper viverra nam libero justo laoreet. Consectetur a erat nam at lectus urna duis convallis. Ut ornare lectus sit amet est placerat. Morbi tempus iaculis urna id volutpat.
 

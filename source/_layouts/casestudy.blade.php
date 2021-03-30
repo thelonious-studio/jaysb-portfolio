@@ -22,8 +22,9 @@
 				<hr>
 				<h3>{{ $page->type }}</h3>
 			</div>
-			@yield('csContent')
-			{!! $page->writeup !!}
+			<p>@yield('csContent')</p>
+
+			<p>{!! $page->writeup !!}</p>
 			<a href="/"><h3>Back</h3></a>
 		</div>
 

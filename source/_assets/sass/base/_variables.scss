@@ -20,7 +20,7 @@ $desktop: $medium !default;
 //==============================================================================
 
 $background: white !default;
-$primary-color: #222222 !default;
+$primary-color: #333333 !default;
 $secondary-color: #ff3448 !default;
 $accent-color: #cdcdcd !default;
 $alternate-background: #fafafa !default;
@@ -37,34 +37,31 @@ $bq-border: 16px solid #f0f0f0 !default;
 //==============================================================================
 
 // Body
-$font-size: 1.125rem !default;
-$body-font-size: 1rem !default;
+$font-size: 18px !default;
+$body-font-size: 18px !default;
 $font-style: normal !default;
 $font-variant: normal !default;
-$font-weight: 500 !default;
-$font-color: #404040 !default;
-$font-family: 'neue-haas-grotesk-display',
--apple-system,
-BlinkMacSystemFont,
+$font-weight: 400 !default;
+$font-color: #333333 !default;
+$font-family:
 Helvetica Neue,
 Helvetica,
 Arial,
 sans-serif !default;
-$line-height: 1.6 !default;
+$line-height: 32px !default;
+$body-font: 'ImperialBT-Roman';
 
 // Headings
 $heading-font-color: $primary-color !default;
-$heading-font-weight: 500 !default;
-$heading-font-family: 'neue-haas-grotesk-display',
--apple-system,
-BlinkMacSystemFont,
+$heading-font-weight: 400 !default;
+$heading-font-family:
 Helvetica Neue,
 Helvetica,
 Arial,
 sans-serif !default;
 $heading-line-height: 1.2 !default;
 
-$h1-mobile: 1.75rem !default;
+$h1-mobile: 1.6rem !default;
 $h2-mobile: 1.5rem !default;
 $h3-mobile: 1.25rem !default;
 $h4-mobile: 1.1rem !default;
@@ -103,7 +100,7 @@ $button-background: $secondary-color !default;
 $button-background-hover: darken($button-background, 5%) !default;
 $button-color: #ffffff !default;
 $button-font-weight: 600 !default;
-$button-font-family: 'neue-haas-grotesk-display',
+$button-font-family: 'Pulp Display',
 -apple-system,
 BlinkMacSystemFont,
 Helvetica Neue,

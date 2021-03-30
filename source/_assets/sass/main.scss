@@ -1,5 +1,6 @@
 @import "base/normalize";
 @import "base/reset";
+@import "base/fonts";
 @import "base/variables";
 @import "base/mixins";
 @import "components/_messages.scss";
@@ -75,6 +76,7 @@
 
 		h4 {
 			margin: .25rem 0;
+			color: lighten($primary-color, 10%);
 		}
 	}
 
@@ -96,14 +98,21 @@
 	padding: 0 1rem;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
 	gap: 1rem;
 	grid-template-areas:
-		"abouttext aboutimg";
+		"abouttext"
+		"aboutimg";
 
 	&__text {
 		grid-area: abouttext;
+
+		p {
+			font-size: 1.125rem;
+			font-family: $body-font !important;
+			line-height: 1.5;
+		}
 	}
 
 	&__header {
@@ -126,11 +135,12 @@
 	&__body {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
 		gap: 1rem;
 		grid-template-areas:
-		  "csimg cstext";
+		  "csimg"
+		  "cstext";
 	}
 
 	&__header {
@@ -158,6 +168,12 @@
 	&__text {
 		grid-area: cstext;
 		width: 100%;
+
+		p {
+			font-size: 1.125rem;
+			font-family: $body-font !important;
+			line-height: 1.5;
+		}
 	}
 }
 

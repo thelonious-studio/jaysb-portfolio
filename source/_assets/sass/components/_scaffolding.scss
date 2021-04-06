@@ -125,14 +125,15 @@ h5 {
 
 // Link styling
 a {
-    color: $link-color;
+    color: $primary-color;
+	font-weight: 400;
     text-decoration: none;
 	transform: 150ms all ease;
 
     &:hover,
     &:active,
     &:focus {
-        color: lighten($link-hover-color, 10%);
+        color: lighten($link-color, 10%);
         text-decoration: none;
     }
 }

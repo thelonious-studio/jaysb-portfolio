@@ -7,7 +7,7 @@
 			<nav>
 				<ul class="header__nav">
 					<li class="header__navitem"><a href="/about">About</a></li>
-					<li class="header__navitem"><a href="mailto:hi@jaysbrowne.com">Contact</a></li>
+					<li class="header__navitem"><a href="mailto:hi@jaysbrowne.com">Email</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -35,6 +35,8 @@ $bq-border: 16px solid #f0f0f0 !default;
 //==============================================================================
 // Typography
 //==============================================================================
+$fonts: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
 
 // Body
 $font-size: 18px !default;
@@ -43,22 +45,14 @@ $font-style: normal !default;
 $font-variant: normal !default;
 $font-weight: 400 !default;
 $font-color: #333333 !default;
-$font-family:
-Helvetica Neue,
-Helvetica,
-Arial,
-sans-serif !default;
+$font-family: $fonts !default;
 $line-height: 32px !default;
-$body-font: 'ImperialBT-Roman';
+$body-font: $fonts;
 
 // Headings
 $heading-font-color: $primary-color !default;
 $heading-font-weight: 400 !default;
-$heading-font-family:
-Helvetica Neue,
-Helvetica,
-Arial,
-sans-serif !default;
+$heading-font-family: $fonts !default;
 $heading-line-height: 1.2 !default;
 
 $h1-mobile: 1.6rem !default;
@@ -100,13 +94,7 @@ $button-background: $secondary-color !default;
 $button-background-hover: darken($button-background, 5%) !default;
 $button-color: #ffffff !default;
 $button-font-weight: 600 !default;
-$button-font-family: 'Pulp Display',
--apple-system,
-BlinkMacSystemFont,
-Helvetica Neue,
-Helvetica,
-Arial,
-sans-serif !default;
+$button-font-family: $fonts !default;
 $button-font-size: 1rem !default;
 $button-border-width: 1px !default;
 $button-border-style: solid !default;

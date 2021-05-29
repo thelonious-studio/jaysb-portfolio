@@ -7,7 +7,7 @@ return [
         'title' => 'Jayson Browne',
         'description' => 'Portfolio',
 		'image' => 'jayson_browne_front_end_developer_portfolio.jpg',
-		'role' => 'Front-end designer & developer'
+		'role' => 'front-end designer & developer'
     ],
     'owner' => [
         'name' => 'Jayson Browne',

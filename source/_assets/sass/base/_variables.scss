@@ -20,7 +20,7 @@ $desktop: $medium !default;
 //==============================================================================
 
 $background: white !default;
-$primary-color: #333333 !default;
+$primary-color: #222222 !default;
 $secondary-color: #ff3448 !default;
 $accent-color: #cdcdcd !default;
 $alternate-background: #fafafa !default;
@@ -44,14 +44,14 @@ $body-font-size: 18px !default;
 $font-style: normal !default;
 $font-variant: normal !default;
 $font-weight: 400 !default;
-$font-color: #333333 !default;
+$font-color: #222222 !default;
 $font-family: $fonts !default;
 $line-height: 32px !default;
 $body-font: $fonts;
 
 // Headings
 $heading-font-color: $primary-color !default;
-$heading-font-weight: 700 !default;
+$heading-font-weight: 500 !default;
 $heading-font-family: $fonts !default;
 $heading-line-height: 1.2 !default;
 
